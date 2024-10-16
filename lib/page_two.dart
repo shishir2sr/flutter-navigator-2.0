@@ -1,8 +1,6 @@
-import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
-import 'package:navigator_two_o/app_router.gr.dart';
+import 'package:navigator_two_o/page_three.dart';
 
-@RoutePage()
 class PageTwo extends StatelessWidget {
   const PageTwo({super.key});
 
@@ -15,8 +13,10 @@ class PageTwo extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            AutoRouter.of(context).push(
-              const RouteThree(),
+            Navigator.of(context).push(
+              MaterialPageRoute(
+                builder: (context) => const PageThree(),
+              ),
             );
           },
           child: const Text('Go to page three'),
