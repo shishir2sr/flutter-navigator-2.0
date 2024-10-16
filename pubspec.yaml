@@ -31,11 +31,7 @@ dependencies:
   flutter:
     sdk: flutter
   cupertino_icons: ^1.0.8
-
-  auto_route:
-    git:
-      url: git://github.com/Milad-Akarie/auto_route_library.git
-      ref: main
+  auto_route: ^9.2.2
 
 dev_dependencies:
   flutter_test:
